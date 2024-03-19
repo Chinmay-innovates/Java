@@ -250,162 +250,34 @@ public class Patterns {
             System.out.println();
         }
 
+        System.out.println("\nDaimond Pattern\n");
+        // upper half of the pattern
+        for (int i = 0; i <= n; i++) {
+            // spaces
+            for (int j = 0; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            // stars
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+        // lower half
+        for (int i = n; i >= 1; i--) {
+            // spaces
+            for (int j = 0; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            // stars
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+
     }
 
 }
-/*
- * 
- * enter row and col value :
- * 7 6
- * 
- * Solid Rectangle
- *******
- *******
- *******
- *******
- *******
- *******
- * 
- * 
- * Hollow Rectangle
- *******
- * 
- * *
- * *
- * *
- * *
- *******
- * 
- * Half Pyramid
- *
- **
- ***
- ****
- *****
- ******
- * 
- * 
- * Inverted Half Pyramid
- ******
- *****
- ****
- ***
- **
- *
- * 
- * 
- * Inverted Half Pyramid(rotated 180 deg)
- *
- **
- ***
- ****
- *****
- ******
- * 
- * 
- * Half Pyramid with numbers
- * 
- * 1
- * 1 2
- * 1 2 3
- * 1 2 3 4
- * 1 2 3 4 5
- * 1 2 3 4 5 6
- * 
- * Inverted Half Pyramid with numbers
- * 
- * 1 2 3 4 5 6
- * 1 2 3 4 5
- * 1 2 3 4
- * 1 2 3
- * 1 2
- * 1
- * 
- * Floyd's Triangle
- * 
- * 1
- * 2 3
- * 4 5 6
- * 7 8 9 10
- * 11 12 13 14 15
- * 16 17 18 19 20 21
- * 
- * 0-1 Triangle
- * 
- * 1
- * 0 1
- * 1 0 1
- * 0 1 0 1
- * 1 0 1 0 1
- * 0 1 0 1 0 1
- * 
- * Butterfly Pattern
- * 
- * *
- ** **
- *** ***
- **** ****
- ***** *****
- ************
- ************
- ***** *****
- **** ****
- *** ***
- ** **
- * *
- * 
- * Solid Rhombus
- * 
- * * * * * *
- * * * * * *
- * * * * * *
- * * * * * *
- * * * * * *
- * 
- * Hollow Rhombus
- * 
- * * * * * * *
- * *
- * *
- * *
- * *
- * * * * * * *
- * 
- * Number Pyramid
- * 
- * 1
- * 2 2
- * 3 3 3
- * 4 4 4 4
- * 5 5 5 5 5
- * 6 6 6 6 6 6
- * 
- * Palindrome Pyramid
- * 
- * 1
- * 2 1 2
- * 3 2 1 2 3
- * 4 3 2 1 2 3 4
- * 5 4 3 2 1 2 3 4 5
- * 6 5 4 3 2 1 2 3 4 5 6
- * 
- * Palindrome Pyramid | 2
- * 
- * 1 1
- * 2 1 1 2
- * 3 2 1 1 2 3
- * 4 3 2 1 1 2 3 4
- * 5 4 3 2 1 1 2 3 4 5
- * 6 5 4 3 2 1 1 2 3 4 5 6
- * 
- * Pascal Triangle
- * 
- * 1
- * 1 1
- * 1 2 1
- * 1 3 3 1
- * 1 4 6 4 1
- * 1 5 10 10 5 1
- * 1 6 15 20 15 6 1
- * PS C:\Users\Admin\Desktop\java-practice>
- */
