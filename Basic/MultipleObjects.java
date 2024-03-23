@@ -30,9 +30,7 @@ public class MultipleObjects {
             students[i] = s;
         }
         for (Student s : students) {
-            System.out
-                    .println(
-                            "{ name : " + s.name + " , " + "marks : " + s.marks + " , " + "stdno : " + s.stdNo + " }");
+            System.out.println("{ name : " + s.name + " , " + "marks : " + s.marks + " , " + "stdno : " + s.stdNo + " }");
         }
         sc.close();
 
