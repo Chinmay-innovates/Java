@@ -18,7 +18,10 @@ public class QE_Roots {
         double root1, root2;
         double d = b * b - 4 * a * c;
         System.out.println("delta = " + d);
-        if (d > 0) {
+        if (a == 0) {
+            System.out.println("it is a linear equation");
+            return;
+        } else if (d > 0) {
             root1 = (-b + Math.sqrt(d)) / 2 * a;
             root2 = (-b - Math.sqrt(d)) / 2 * a;
             System.out.println("roots are real and distinct");
@@ -31,8 +34,8 @@ public class QE_Roots {
             System.out.println("no real roots");
             double real = -b / 2 * a;
             double img = Math.sqrt(-d) / 2 * a;
-            System.out.println(real + " + i " + img);
-            System.out.println(real + " - i " + img);
+            System.out.println(real + " + " + img + "i");
+            System.out.println(real + " - " + img + "i");
         }
 
     }
