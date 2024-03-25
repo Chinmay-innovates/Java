@@ -14,6 +14,10 @@ class Student {
         this.marks = marks;
     }
 
+    void printStudent(){
+    System.out.println("{ name : " + name + " , " + "marks : " + marks + " , " + "stdno : " + stdNo + " }");                
+    }
+
 }
 
 public class MultipleObjects {
@@ -30,8 +34,7 @@ public class MultipleObjects {
             students[i] = s;
         }
         for (Student s : students) {
-            System.out
-                    .println("{ name : " + s.name + " , " + "marks : " + s.marks + " , " + "stdno : " + s.stdNo + " }");
+        s.printStudent();
         }
         sc.close();
 
