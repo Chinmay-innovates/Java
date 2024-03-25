@@ -8,13 +8,13 @@ class HelloTo {
         // ---- SCAN INPUT ----
         Scanner sc = new Scanner(System.in);
 
-        int take_integer = sc.nextInt();
-        float take_float = sc.nextFloat();
-        boolean take_boolean = sc.nextBoolean();
-        char take_char = sc.next().charAt(0);
-        String take_string = sc.nextLine();
-        String take_string2 = sc.next();
-        byte take_byte = sc.nextByte();
+        // int take_integer = sc.nextInt();
+        // float take_float = sc.nextFloat();
+        // boolean take_boolean = sc.nextBoolean();
+        // char take_char = sc.next().charAt(0);
+        // String take_string = sc.nextLine();
+        // String take_string2 = sc.next();
+        // byte take_byte = sc.nextByte();
 
         sc.close();
 

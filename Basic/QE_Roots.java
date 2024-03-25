@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class QE_Roots {
 
     public static void main(String[] args) {
-        double a = 1, b = 2, c = 1;
+        double a, b, c;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a, b and c");
         a = sc.nextDouble();
